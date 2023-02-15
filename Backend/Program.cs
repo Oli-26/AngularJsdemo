@@ -77,8 +77,9 @@ namespace SB.TechnicalTest
 
             while(bottomIndex < topIndex){
                 int middleIndex = (bottomIndex + topIndex) / 2;
+                print(middleIndex);
 
-                if(!Building.DropMarble(middleIndex) && Building.DropMarble(middleIndex-1)){
+                if(middleIndex != 0 && !Building.DropMarble(middleIndex) && Building.DropMarble(middleIndex-1)){
                     return middleIndex-1;
                 }
                 if(Building.DropMarble(middleIndex)){
