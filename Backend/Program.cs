@@ -61,7 +61,7 @@ namespace SB.TechnicalTest
         /// Given that the heights to breaking mapping is basically an ordered array
         /// A bianry search can be used to find the floor at which the marble breaks
         /// The floor before this can then be returned.
-        /// This will have a NLog2(N) time complexity
+        /// This will have a Log2(N) time complexity
         /// Given we are not looking for a specific answer, but rather the first instance of false (to get the last instance of true), the search needs to keep looking until
         /// !Building.DropMarble(middleIndex) and Building.DropMarble(middleIndex-1) is satisfied.
         /// </summary>
